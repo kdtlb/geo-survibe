@@ -1,0 +1,13 @@
+# Configuración local del entorno (no compartir)
+.claude/settings.local.json
+
+# Artefacto de build (se regenera desde geoportal/)
+survibe-geoportal.zip
+
+# Dependencias
+node_modules/
+
+# Archivos del sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sur Vibe Bolivia · Geoportal</title>
+  <meta name="description" content="Geoportal de Sur Vibe Bolivia: caminatas, áreas protegidas, municipios, ecorregiones y humedales de Bolivia." />
+  <link rel="icon" type="image/svg+xml" href="assets/compass.svg" />
+
+  <!-- Tipografía (degrada a fuentes del sistema si no hay internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <img class="loader__logo" src="assets/logo.png" alt="Sur Vibe Bolivia" />
+      <div class="loader__bar"><i></i></div>
+      <div class="loader__sub">Cargando geoportal…</div>
+    </div>
+  </div>
+
+  <!-- Botón de menú flotante (solo móvil) -->
+  <button class="mobile-menu" id="sidebar-toggle" aria-label="Menú"><span id="ico-menu"></span></button>
+  <!-- Fondo oscuro tras el menú (solo móvil) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+  <!-- ===== Menú lateral (logo, título, buscador y capas) ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-head">
+      <button class="side-close" id="side-close" aria-label="Cerrar menú">&times;</button>
+      <img class="side-logo" id="brand" src="assets/logo.png" alt="Sur Vibe Bolivia" title="Ver todo Bolivia" />
+      <h1 class="side-title">Geoportal Turístico de Bolivia</h1>
+      <div class="search">
+        <span class="search__icon" id="ico-search"></span>
+        <input id="search-input" type="text" placeholder="Buscar una caminata…" autocomplete="off" />
+        <div class="search__results" id="search-results"></div>
+      </div>
+    </div>
+
+    <div class="section-title">Capas del mapa</div>
+    <div id="layer-groups"></div>
+
+    <div class="sidebar-footer">Diseñado por <b>Matias LB</b></div>
+  </aside>
+
+  <!-- ===== Mapa ===== -->
+  <div class="map-wrap">
+    <div id="map"></div>
+
+    <div class="map-panel map-actions">
+      <button class="icon-btn" id="act-bolivia" title="Ver todo Bolivia"><span id="ico-bolivia"></span><span class="label-hide">Bolivia</span></button>
+      <button class="icon-btn" id="act-caminatas" title="Ir a las caminatas"><span id="ico-caminatas"></span><span class="label-hide">Caminatas</span></button>
+    </div>
+
+    <div class="basemaps" id="basemaps"></div>
+
+    <div class="map-panel coords">
+      <span id="coords-val"><b>Lat</b> —&nbsp; <b>Lon</b> —</span>
+    </div>
+
+    <!-- Panel de detalles -->
+    <div class="details" id="details">
+      <div class="details__banner">
+        <div class="details__kicker">Ruta de caminata</div>
+        <h3 class="details__title">—</h3>
+        <button class="details__close" aria-label="Cerrar"></button>
+      </div>
+      <div class="details__body"></div>
+    </div>
+  </div>
+
+  <!-- ===== Scripts ===== -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="data/departamentos.js"></script>
+  <script src="data/municipios.js"></script>
+  <script src="data/ecorregiones.js"></script>
+  <script src="data/subcuencas.js"></script>
+  <script src="data/ap_nacional.js"></script>
+  <script src="data/ap_subnacional.js"></script>
+  <script src="data/ramsar.js"></script>
+  <script src="data/caminatas.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

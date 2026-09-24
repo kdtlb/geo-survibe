@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "caminatas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Caminata": "Tajzara de Colores", "Dificultad": 1 }, "geometry": { "type": "Point", "coordinates": [ -65.080990316577711, -21.765045078749097 ] } },
+{ "type": "Feature", "properties": { "id": 2, "Caminata": "Pilaya", "Dificultad": 1 }, "geometry": { "type": "Point", "coordinates": [ -64.801036987732715, -21.110281605142763 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Curqui", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -65.070112130085448, -21.492132755467583 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "4 Arcos", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -64.790478747902057, -21.539027841674521 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Tucumillas", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -64.831467914578198, -21.461552023168878 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Avatar", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -64.879951831800923, -21.633891560279849 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Aguas Claras", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -64.828856349953355, -21.479111515195051 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Tres Morros", "Dificultad": 2 }, "geometry": { "type": "Point", "coordinates": [ -64.877520237173243, -21.391583367985081 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Cerro Pabellon", "Dificultad": 1 }, "geometry": { "type": "Point", "coordinates": [ -64.835127304519489, -21.921184094146067 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Camino del Inca", "Dificultad": 3 }, "geometry": { "type": "Point", "coordinates": [ -64.997628213914439, -21.746283278663043 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Lazareto", "Dificultad": null }, "geometry": { "type": "Point", "coordinates": [ -64.815194627505633, -21.578101710971239 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "El Morao", "Dificultad": null }, "geometry": { "type": "Point", "coordinates": [ -65.022128129521619, -21.8622914564782 ] } },
+{ "type": "Feature", "properties": { "id": null, "Caminata": "Cochas", "Dificultad": null }, "geometry": { "type": "Point", "coordinates": [ -64.878104139830455, -21.383770591662191 ] } }
+]
+}
